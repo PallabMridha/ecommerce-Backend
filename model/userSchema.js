@@ -22,8 +22,11 @@ const userSchema = new Schema({
     otp:{
         type: String,
     },
+    expireOtp:{
+        type: Date,
+    },
     isverifide:{
-        type: String,
+        type: Boolean,
         default: false
     },
 })
